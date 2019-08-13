@@ -1,0 +1,24 @@
+
+<div id="form">
+	<div><button action="trans">传送数据</button></div>
+	<div id="transferContainer">
+		<div id="transferLeftContainer">
+			<select name="leftConnId" ui="select" url="dbconn!list.do" label="name" value="id" change-action="changeLeft">
+				<option value="">请选择</option>
+			</select>
+			<ul id="left-table">
+				
+			</ul>
+			
+		</div>
+		<div id="transferRightContainer">
+			<select name="rightConnId" ui="select" url="dbconn!list.do" label="name" value="id" change-action="changeRight">
+				<option value="">请选择</option>
+			</select>
+			
+			<ul id="right-table">
+			</ul>
+			
+		</div>
+	</div>
+</div>
