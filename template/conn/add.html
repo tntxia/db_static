@@ -1,0 +1,39 @@
+<div id="app">
+    <div>
+        <div>
+            名称:<input name="name">
+        </div>
+        <div style="position:relative;">
+            数据库类型:
+            <select name="dbType" ng-model="model.db_type" change-action="dbTypeChange">
+				<option value="">请选择</option>
+				<option>h2</option>
+				<option>sqlserver</option>
+				<option>jndi</option>
+			</select>
+            <span>
+				连接类型：
+				<select ng-model="model.connectType">
+					<option value="1">文件</option>
+					<option value="2">TCP</option>
+                </select>
+                <span style="position: relative;">
+                    <button @click="chooseFile">选择</button>
+                    <file-choose ref="fileChoose"></file-choose>
+                </span>
+            <br>
+            </span>
+        </div>
+    </div>
+</div>
+<div>
+    <br> 位置:
+    <input name="url" value="jdbc:h2:<path>" style="width:250px;"><br> 驱动:
+    <input name="driver"><br> 用户名:
+    <input name="username"><br> 密码:
+    <input name="password">
+</div>
+<div>
+    <button action="sub">增加</button>
+</div>
+</div>

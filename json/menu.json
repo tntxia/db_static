@@ -1,0 +1,10 @@
+[{
+    "text": "菜单导航",
+    "buttons": [{
+        "text": "数据库操作",
+        "url": "#operate"
+    }, {
+        "text": "数据库连接",
+        "url": "#conn"
+    }]
+}]

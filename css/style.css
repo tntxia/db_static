@@ -1,0 +1,40 @@
+.dbconn-operate {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dbconn-operate .leftbar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    overflow: auto;
+}
+
+.dbconn-operate .main {
+    display: flex;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.file-choose {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.file-choose .title-bar {
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+}
+
+.file-choose .tree-node {
+    padding-left: 15px;
+    border: 1px solid #ccc;
+}

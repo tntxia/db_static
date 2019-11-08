@@ -1,0 +1,41 @@
+<div id="app">
+    <div id="form">
+        <div>
+            <div>
+                名称:<input v-model="form.name">
+            </div>
+            <div style="position:relative;">
+                数据库类型:
+                <select v-model="form.db_type">
+					<option value="">请选择</option>
+					<option>h2</option>
+					<option>sqlserver</option>
+					<option>jndi</option>
+				</select>
+                <span id="connTypeSpan">
+					连接类型：
+					<select v-model="form.connect_type">
+						<option value="1">文件</option>
+						<option value="2">TCP</option>
+					</select>
+					<button class="btn btn-default" action="chooseFile">
+						<span class="glyphicon glyphicon-option-horizontal"></span>
+                </button>
+                <br>
+                </span>
+                <div id="fileChoose" style="position:absolute;top:35px;left:350px;max-height:250px;overflow:auto;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <br> 位置:
+            <input v-model="form.url" value="jdbc:h2:<path>" style="width:250px;"><br> 驱动:
+            <input v-model="form.driver"><br> 用户名:
+            <input v-model="form.username"><br> 密码:
+            <input v-model="form.password">
+        </div>
+        <div>
+            <button @click="sub">保存</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+{
+    "user": {
+        "path": "/oa_admin_static/modules/user.module.js",
+        "template": "/oa_admin_static/template/user.html"
+    }
+}

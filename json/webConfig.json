@@ -1,0 +1,56 @@
+{
+    "cssList": [
+        "/static/lib/font-awesome/css/font-awesome.css",
+        "/static/lib/bootstrap/css/bootstrap.css",
+        "/static/lib/bootstrap-plus/css/bootstrap.nav.css",
+        "css/tntxiaui/style.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.datepicker.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.pagination.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.datagrid.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.ip-input.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.dialog.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.tabs.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui.combobox.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui-table-form.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui-upload-image.css",
+        "/static/lib/main-layout-install/css/main-layout.css",
+        "/static/lib/jxiaui/0.1/css/jxiaui-tree.css",
+        "css/tntxiaui/style.css",
+        "css/style.css",
+        "/static/lib/ztree/css/zTreeStyle/zTreeStyle.css",
+        "/static/lib/easy-tree/css/easy-tree.css",
+        "/db_static/css/style.css"
+    ],
+    "jsList": [
+        "/static/lib/vue/vue-render-dom-tree.js",
+        "/static/lib/module_route/module_route.js",
+        "/static/lib/main-layout-install/js/main-layout-install.js"
+    ],
+    "layout": {
+        "router": {
+            "defaultModule": "operate",
+            "tree": [{
+                "name": "conn",
+                "label": "数据库连接",
+                "index": "list",
+                "children": [{
+                    "name": "add",
+                    "label": "增加"
+                }]
+            }]
+        },
+        "header": {
+            "height": 50,
+            "template": "/db_static/template/header.html"
+        },
+        "leftbar": {
+            "url": "/db_static/json/menu.json",
+            "width": 150
+        },
+        "main": {
+            "crumb": true,
+            "template": "/oa_admin_static/template/content.html"
+        }
+    }
+}

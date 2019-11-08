@@ -1,0 +1,15 @@
+{
+    "modules": [{
+        "name": "welcome"
+    }, {
+        "group": "conn",
+        "name": "add"
+    }, {
+        "group": "conn",
+        "name": "list"
+    }, {
+        "group": "conn",
+        "name": "edit"
+    }],
+    "components": []
+}

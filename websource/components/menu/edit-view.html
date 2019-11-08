@@ -1,0 +1,27 @@
+<div>
+    <div>
+        <button @click="sub">保存</button>
+    </div>
+
+    <div id="form">
+        <input type="hidden" name="logo">
+        <table class="table table-bordered">
+            <tr>
+                <td>菜单名</td>
+                <td><input v-model="form.name"></td>
+                <td>关键字名</td>
+                <td><input v-model="form.key_name"></td>
+            </tr>
+            <tr>
+                <td>
+                    URL
+                </td>
+                <td><input v-model="form.url"></td>
+                <td>
+                    排序编号
+                </td>
+                <td><input v-model="form.order_no" type="number"></td>
+            </tr>
+        </table>
+    </div>
+</div>
